@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # A short script to append a string (tag) at the end of all lines starting with @ in the file
 # This string (tag) is generated from the filename and prefix "/1__novis__" and suffix "454FWD"
 
@@ -10,8 +12,6 @@
 
 # Outputs:
 # fastq files with a tag appended to all lines starting with @ and filename maching the pattern "*_L001.filtered.PE150.fastq_processed"
-
-#!/bin/bash
 
 for filename in *_L001.filtered.PE150.fastq; do
         temp=(`echo $filename | grep -P -o '^.+_L\d+'`)      
