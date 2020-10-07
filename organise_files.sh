@@ -33,7 +33,8 @@ curl http://swcarpentry.github.io/shell-novice/data/data-shell.zip -o data-shell
 curl https://github.com/apawlik/bioinf-scripts/raw/master/bioinformatics_data.zip - o bioinformatics-data.zip
 
 unzip bioinformatics-data.zip
-mv bioinformatics-data/* data/
+mv bioinformatics-data/* .
+rm -r bioinformatics-data/
 
 
 ## STEP 3 sort the data files into 
