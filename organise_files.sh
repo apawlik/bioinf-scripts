@@ -30,7 +30,7 @@ fi
 cd data
 
 curl http://swcarpentry.github.io/shell-novice/data/data-shell.zip -o data-shell
-curl - o bioinformatics-data.zip
+curl https://github.com/apawlik/bioinf-scripts/raw/master/bioinformatics_data.zip - o bioinformatics-data.zip
 
 unzip bioinformatics-data.zip
 mv bioinformatics-data/* data/
