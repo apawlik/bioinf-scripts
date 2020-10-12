@@ -27,13 +27,15 @@ fi
 
 cd data
 
-#curl http://swcarpentry.github.io/shell-novice/data/data-shell.zip -o data-shell
-#curl https://github.com/apawlik/bioinf-scripts/raw/master/bioinformatics_data.zip - o bioinformatics-data.zip
+curl https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/MacroPopGenBase.zip -o MacroPopGenBase.zip
+curl https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/prubi_gbs.vcf.gz - o prubi_gbs.vcf.gz
 
-##unzip bioinformatics-data.zip
-#mv bioinformatics-data/* .
+unzip MacroPopGenBase.zip
+rm MacroPopGenBase.zip
 
-#rm -r bioinformatics-data/
+gunzip prubi_gbs.vcf.gz
+rm prubi_gbs.vcf.gz
+
 cd ..
 
 ## STEP 3 get the scripts 
