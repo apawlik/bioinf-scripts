@@ -27,14 +27,19 @@ fi
 
 cd data
 
-curl https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/MacroPopGenBase.zip -o MacroPopGenBase.zip
-curl https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/prubi_gbs.vcf.gz - o prubi_gbs.vcf.gz
+curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/MacroPopGenBase.zip -o MacroPopGenBase.zip
+curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/prubi_gbs.vcf.gz - o prubi_gbs.vcf.gz
+curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/final_strains.vcf.gz -o final_strains.vcf.gz
+
 
 unzip MacroPopGenBase.zip
 rm MacroPopGenBase.zip
 
 gunzip prubi_gbs.vcf.gz
 rm prubi_gbs.vcf.gz
+
+gunzip final_strains.vcf.gz
+rm final_strains.vcf.gz
 
 cd ..
 
@@ -49,3 +54,5 @@ fi
 
 cd scripts
 
+curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/faststructure_chooseK_distruct.sh -o faststructure_chooseK_distruct.sh
+chmod +x faststructure_chooseK_distruct.sh
