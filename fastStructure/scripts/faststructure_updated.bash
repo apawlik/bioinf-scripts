@@ -1,5 +1,6 @@
-# This script was developed by Manpreet Dhami (Manaaki Whenua Landcare Research) and Ben Roberts (NeSI NZ)
 #!/bin/bash -e
+
+# This script was developed by Manpreet Dhami (Manaaki Whenua Landcare Research) and Ben Roberts (NeSI NZ)
 
 ###########################
 # Setup SLURM Environment #
@@ -14,23 +15,15 @@
 #SBATCH --error faststructure-%j.err
 #SBATCH --nodes=1 #default
 
-
-
 # Default values
 workingdir="$HOME/fastStructure_workshop"
-vcfdir="${workingdir}/data/"
-scripts="${workingdir}/scripts/"
-faststructure="${workingdir}/modules/fastStructure"
+vcfdir="${workingdir}/data"
+scripts="${workingdir}/scripts"
 
- 
+
+
 module load Python/3.6.3-gimkl-2017a
 module load fastStructure/1.0-gimkl-2017a-Python-2.7.14
-
-
-
-# Need to add module loading?
-# See https://support.nesi.org.nz/hc/en-gb/articles/360000474535-Installing-Third-Party-applications
-
 
 #Create new faststructure dir
 
@@ -39,10 +32,10 @@ for prior in simple logistic
 	for K in 1 2 3 4 5 6 7 8 9 10
 		do
 			
-		python "${faststructure}/bin/structure.py" \
+		structure.py \
 			-K $K \
 			--input=${vcfdir}/final_strains \
-			--output=${vcfdir}/output/${prior}/final_strains \
+			--output=${vcfdir}/${prior}/final_strains \
 			--tol=0.00001 \
 			--prior=$prior \
 			--cv=0 \
