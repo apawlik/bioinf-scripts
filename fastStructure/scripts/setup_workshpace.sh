@@ -62,7 +62,7 @@ chmod +x faststructure_chooseK_distruct.sh
 
 curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/faststructure_updated.bash -o faststructure_updated.bash
 curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/plink_vcf2bed.sh -o plink_vcf2bed.sh
-
+cd ..
 
 ## Download fastStructure module
 if [ -d modules ] 
