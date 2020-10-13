@@ -20,6 +20,7 @@
 workingdir="$HOME/fastStructure_workshop"
 vcfdir="${workingdir}/data/"
 scripts="${workingdir}/scripts/"
+faststructure="${workingdir}/modules/fastStructure"
 
  
 module load Python/3.6.3-gimkl-2017a
@@ -27,7 +28,7 @@ module load fastStructure/1.0-gimkl-2017a-Python-2.7.14
 
 
 
-# Need to add module loading 
+# Need to add module loading?
 # See https://support.nesi.org.nz/hc/en-gb/articles/360000474535-Installing-Third-Party-applications
 
 
@@ -38,7 +39,7 @@ for prior in simple logistic
 	for K in 1 2 3 4 5 6 7 8 9 10
 		do
 			
-		python "${EBROOTFASTSTRUCTURE}/bin/structure.py" \
+		python "${faststructure}/bin/structure.py" \
 			-K $K \
 			--input=${vcfdir}/final_strains \
 			--output=${vcfdir}/output/${prior}/final_strains \
