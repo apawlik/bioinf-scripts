@@ -30,7 +30,7 @@ cd data
 curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/MacroPopGenBase.zip -o MacroPopGenBase.zip
 curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/prubi_gbs.vcf.gz - o prubi_gbs.vcf.gz
 curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/final_strains.vcf.gz -o final_strains.vcf.gz
-
+curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/Re__fastStruct_workshop.zip -o Re__fastStruct_workshop.zip
 
 unzip MacroPopGenBase.zip
 rm MacroPopGenBase.zip
