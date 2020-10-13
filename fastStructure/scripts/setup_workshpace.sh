@@ -28,7 +28,7 @@ fi
 cd data
 
 curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/MacroPopGenBase.zip -o MacroPopGenBase.zip
-curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/prubi_gbs.vcf.gz - o prubi_gbs.vcf.gz
+curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/prubi_gbs.vcf.gz -o prubi_gbs.vcf.gz
 curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/final_strains.vcf.gz -o final_strains.vcf.gz
 curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/data/Re__fastStruct_workshop.zip -o Re__fastStruct_workshop.zip
 
@@ -40,6 +40,9 @@ rm prubi_gbs.vcf.gz
 
 gunzip final_strains.vcf.gz
 rm final_strains.vcf.gz
+
+unzip Re__fastStruct_workshop.zip
+rm Re__fastStruct_workshop.zip
 
 cd ..
 
@@ -56,3 +59,6 @@ cd scripts
 
 curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/faststructure_chooseK_distruct.sh -o faststructure_chooseK_distruct.sh
 chmod +x faststructure_chooseK_distruct.sh
+
+curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/faststructure_updated.bash -o faststructure_updated.bash
+curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/plink_vcf2bed.sh -o plink_vcf2bed.sh
