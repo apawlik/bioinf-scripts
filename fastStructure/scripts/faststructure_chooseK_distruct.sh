@@ -16,7 +16,7 @@
 #SBATCH --error chooseK-%j.err
 #SBATCH --nodes=1 #default
 
-#Directories
+# Set directory paths (assuming you used the setup_workshop.sh to setup your workspace)
 workingdir=$HOME/fastStructure_workshop
 vcfdir="${workingdir}/data"
 scripts="${workingdir}/scripts"
