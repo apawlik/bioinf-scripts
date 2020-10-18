@@ -9,7 +9,7 @@
 #SBATCH --account YOUR_PROJECT_NAME
 #SBATCH --job-name faststructure
 #SBATCH --cpus-per-task 8
-#SBATCH --time 48:00:00
+#SBATCH --time 30:00
 #SBATCH --mem-per-cpu=3G
 #SBATCH --output faststructure-%j.out
 #SBATCH --error faststructure-%j.err
@@ -21,11 +21,8 @@ vcfdir="${workingdir}/data"
 scripts="${workingdir}/scripts"
 
 
-
 module load Python/3.6.3-gimkl-2017a
 module load fastStructure/1.0-gimkl-2017a-Python-2.7.14
-
-#Create new faststructure dir
 
 for prior in simple logistic
 	do

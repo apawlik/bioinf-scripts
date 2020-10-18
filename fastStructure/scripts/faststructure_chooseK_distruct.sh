@@ -19,7 +19,6 @@
 #Directories
 workingdir=$HOME/fastStructure_workshop
 vcfdir="${workingdir}/data"
-#Genome="MR1_a10"
 scripts="${workingdir}/scripts"
 prior="simple" #This needs to either simple or logistic
 
