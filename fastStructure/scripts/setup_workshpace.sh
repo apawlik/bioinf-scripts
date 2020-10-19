@@ -58,22 +58,9 @@ fi
 cd scripts
 
 curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/faststructure_chooseK_distruct.sh -o faststructure_chooseK_distruct.sh
-chmod +x faststructure_chooseK_distruct.sh
-
 curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/faststructure_updated.bash -o faststructure_updated.bash
 curl -L https://raw.githubusercontent.com/apawlik/bioinf-scripts/master/fastStructure/scripts/plink_vcf2bed.sh -o plink_vcf2bed.sh
 cd ..
 
-## Download fastStructure module
-if [ -d modules ] 
-then
-   echo 'modules directory already exists.'
-else
-   mkdir modules
-fi
 
-cd modules
 
-curl -L https://github.com/apawlik/bioinf-scripts/raw/master/fastStructure/modules/fastStructure.zip -o fastStructure.zip
-unzip fastStructure.zip
-rm fastStructure.zip
