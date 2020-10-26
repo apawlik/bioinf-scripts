@@ -29,12 +29,17 @@ fi
 
 cd data
 
-curl -L https://github.com/apawlik/bioinf-scripts/raw/master/bioinformatics_data.zip - o bioinformatics-data.zip
+curl -L https://github.com/apawlik/bioinf-scripts/raw/master/shell-scripting/data/untrimmed_fastq.zip -o untrimmed_fastq.zip
 
-unzip bioinformatics-data.zip
-mv bioinformatics-data/* .
-rm -r bioinformatics-data/
+unzip untrimmed_fastq.zip
+mv untrimmed_fastq.zip/* .
+rm -r untrimmed_fastq.zip/
 
+
+curl -L https://github.com/apawlik/bioinf-scripts/raw/master/shell-scripting/data/sample-data.zip -o sample-data.zip
+unzip sample-data.zip
+mv sample-data.zip/* .
+rm -r sample-data.zip/
 
 ## STEP 3 sort the data files into 
 ### 3.1 create sub-folders for data
