@@ -1,5 +1,11 @@
 This directory contains examples of shell scripts which may be useful for researchers in bioinformatics. The scripts operate on sample data consisting of various `fasta`and `fa`files, as well as text files and `csv`files.
 
+### Objectives
+The scripts in this repository show how to:
+* set up directories for your project;
+* download data files and place them in correct directories;
+* do some data pre-cleaning using `sed`, `grep` and other command line tools.
+
 ### Data sources
 * [An Introductory Undergraduate course in Bioinformatics by Rob Harbert](https://github.com/rsh249/bioinformatics/tree/master/data)
 * Data files from dr Manpreet Dhami (Manaaki Whenua Landcare Research)
