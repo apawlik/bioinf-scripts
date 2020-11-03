@@ -3,7 +3,7 @@
 This is a resource containing scripts and sample data for learning various skills related to broadly understood bioinformatics. Most of the resources you find here were pulled together to run short training sessions at [Manaaki Whenua Landcare Research](https://www.landcareresearch.co.nz/).
 
 ## Shell scripting
-[Materials](https://github.com/apawlik/bioinf-scripts/tree/master/shell-scripting) for learning 
+[Materials](https://github.com/apawlik/bioinf-scripts/tree/master/shell-scripting) for learning intermediate skills in shell scripting.
 
 ## fastStructure data analysis
 
