@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Welcome to Bioinformatics Scripts! | bioinf-scripts</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Welcome to Bioinformatics Scripts!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This repository contains resources useful for bioinformatics. You can find here materials to learn more efficient shell scripting, processing your data files using in-built shell programmes (such as grep, awk or sed) and domain-specific programmes." />
+<meta property="og:description" content="This repository contains resources useful for bioinformatics. You can find here materials to learn more efficient shell scripting, processing your data files using in-built shell programmes (such as grep, awk or sed) and domain-specific programmes." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="bioinf-scripts" />
+<script type="application/ld+json">
+{"headline":"Welcome to Bioinformatics Scripts!","url":"http://localhost:4000/","name":"bioinf-scripts","description":"This repository contains resources useful for bioinformatics. You can find here materials to learn more efficient shell scripting, processing your data files using in-built shell programmes (such as grep, awk or sed) and domain-specific programmes.","@type":"WebSite","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=c68479336796fae8dd53ccb7c3b90357840f29d0">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">bioinf-scripts</a></h1>
+        
+        
+
+        <p>This repository contains resources useful for bioinformatics. You can find here materials to learn more efficient shell scripting, processing your data files using in-built shell programmes (such as `grep`, `awk` or `sed`) and domain-specific programmes. </p>
+
+        
+        <p class="view"><a href="https://github.com/apawlik/bioinf-scripts">View the Project on GitHub <small>apawlik/bioinf-scripts</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="welcome-to-bioinformatics-scripts">Welcome to Bioinformatics Scripts!</h2>
+
+<p>This is a resource containing scripts and sample data for learning various skills related to broadly understood bioinformatics. Most of the resources you find here were pulled together to run short training sessions at <a href="https://www.landcareresearch.co.nz/">Manaaki Whenua Landcare Research</a>.</p>
+
+<h2 id="shell-scripting">Shell scripting</h2>
+<p><a href="https://github.com/apawlik/bioinf-scripts/tree/master/shell-scripting">Materials</a> for learning</p>
+
+<h2 id="faststructure-data-analysis">fastStructure data analysis</h2>
+
+<p><a href="https://github.com/apawlik/bioinf-scripts/tree/master/fastStructure">Materials</a> for learning how to use <code class="language-plaintext highlighter-rouge">plink</code> and <code class="language-plaintext highlighter-rouge">fastStructure</code> to analyse data.</p>
+
+<h2 id="faq">FAQ</h2>
+<p>Unix/Linux shell is a great tool but it has some quirks which frequently trip over new learners. Often these quirks are overlooked in training (since they are not the main objective) and they remain a <em>mistery</em>. Here’s an incomplete list of these quirks with simplified explanations:</p>
+
+<ul>
+  <li>What’s the difference between running a script <code class="language-plaintext highlighter-rouge">bash script_name.sh</code> and <code class="language-plaintext highlighter-rouge">./script_name.sh</code>?</li>
+</ul>
+
+<p>A script is essentially a programme. However, the computer needs to be told that. You can do that by making the script an executable file as usually a newly created script will be only <code class="language-plaintext highlighter-rouge">read</code> and <code class="language-plaintext highlighter-rouge">write</code> file but not executable. You can check the permissions that the script has running <code class="language-plaintext highlighter-rouge">ls -l script_name.sh</code>.  It may return something like <code class="language-plaintext highlighter-rouge">-rw-r--r--  1 aleksandra  staff  340 21 Sept 11:10 script_name.sh</code>. <code class="language-plaintext highlighter-rouge">r</code> and <code class="language-plaintext highlighter-rouge">w</code> show the file can be read or written to by certain users (<a href="https://kb.iu.edu/d/abdb">learn more about permissions</a>). In order to run a script which permissions like that you have to explicitly tell the computer it needs to use <code class="language-plaintext highlighter-rouge">bash</code> (or other shell) to run it. Hence <code class="language-plaintext highlighter-rouge">bash script_name.sh</code>. But if you add executable permission to the file (<code class="language-plaintext highlighter-rouge">chmod u+x</code> - <code class="language-plaintext highlighter-rouge">u</code> is for current user and <code class="language-plaintext highlighter-rouge">x</code> is for executable), you can simply run it typing <code class="language-plaintext highlighter-rouge">./script_name.sh</code>.</p>
+
+<ul>
+  <li>What is the difference between double (“) and single quotes (‘) in shell commands? When to use which?</li>
+</ul>
+
+<p>OK, this one requires a longer explanation and I think <a href="https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_03.html">this tutorial</a> does it pretty well. In short, if you are not using any special characters in your string, single and double quotes will behave the same way. However, when you start using special characters and escaping (i.e. “disabling” their special meaning) them, ‘ and “ will have different effect. Single quotes (‘’) are used to preserve the literal value of each character enclosed within the quotes.  Using double quotes the literal value of all characters enclosed is preserved, except for the dollar sign, the backticks (backward single quotes, ``) and the backslash. Right… I think best is if you read the <a href="https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_03.html">this tutorial</a> and try out the examples they are showing!</p>
+
+<ul>
+  <li>Why is <code class="language-plaintext highlighter-rouge">curl</code> failing when downloading files, for example from GitHub? The syntax looks good, there’s no error but no file is downloaded?</li>
+</ul>
+
+<p>This may happen because you don’t have the <code class="language-plaintext highlighter-rouge">-L</code> (<code class="language-plaintext highlighter-rouge">--location</code>) flag added after the <code class="language-plaintext highlighter-rouge">curl</code> command. Simplifying, the URL which you provide to curl (assuming it’s a correct one) may include redirections and without the <code class="language-plaintext highlighter-rouge">-L</code> <code class="language-plaintext highlighter-rouge">curl</code> will not follow them to where the file is. It is often the case with GitHub. Having said all that, the reason why your <code class="language-plaintext highlighter-rouge">curl</code> doesn’t work may be different and hopefully you will be able to find the answer online!</p>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/apawlik">apawlik</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
