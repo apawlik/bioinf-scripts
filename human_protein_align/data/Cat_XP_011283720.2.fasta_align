@@ -1,0 +1,74 @@
+########################################
+# Program: needle
+# Rundate: Fri 22 Jan 2021 10:22:36
+# Commandline: needle
+#    -asequence Human_NP_001158209.2.fasta
+#    -bsequence Cat_XP_011283720.1.fasta
+#    -outfile Cat_XP_011283720.1.fasta_align
+#    -gapopen 10
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: Cat_XP_011283720.2.fasta_align
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Human_NP_001158209.2
+# 2: Cat_XP_011283720.2
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 494
+# Identity:     258/494 (52.2%)
+# Similarity:   331/494 (67.0%)
+# Gaps:          35/494 ( 7.1%)
+# Score: 1409.5
+# 
+#
+#=======================================
+
+Human_NP_0011      1 MRFTFTSRCLALFLLLNHPTPILPAFS----NQTYPTIEPKPFLYVVGRK     46
+                        ....:|:..||.      |||.|.    .::...|:......|..|.
+Cat_XP_011283      1 ---MMEKKCILHFLF------ILPFFMILDIAESEENIDDLNEFGVYTRN     41
+
+Human_NP_0011     47 KMMDAQYKCYDRMQQLPAYQGEGPYCNRTWDGWLCWDDTPAGVLSYQFCP     96
+                     |:|.|||:||.::.|.|..|.||.||||||||||||:|..||..|.|.||
+Cat_XP_011283     42 KIMTAQYECYQKIMQDPIQQTEGIYCNRTWDGWLCWNDVAAGTESMQHCP     91
+
+Human_NP_0011     97 DYFPDFDPSEKVTKYCDEKGVWFKHPENNRTWSNYTMCNAFTPEKLKNAY    146
+                     |||.||||||||||.||:.|.||:|||:||||:|||.||..|.||:|.|.
+Cat_XP_011283     92 DYFQDFDPSEKVTKICDQDGNWFRHPESNRTWTNYTQCNLNTHEKVKTAL    141
+
+Human_NP_0011    147 VLYYLAIVGHSLSIFTLVISLGIFVFFRKLTTIFPLNWKYRKALSLGCQR    196
+                     .|:||.|:||.|||.:|:||||||.:|:                ||.|||
+Cat_XP_011283    142 NLFYLTIIGHGLSIASLLISLGIFFYFK----------------SLSCQR    175
+
+Human_NP_0011    197 VTLHKNMFLTYILNSMIIIIHLVEVVPNGELVRRDPVSCKILHFFHQYMM    246
+                     :|||||:|.:::.||::.||||..|..|..||..:|:|||:..|.|.|:|
+Cat_XP_011283    176 ITLHKNLFFSFVCNSVVTIIHLTAVANNQALVATNPISCKVSQFIHLYLM    225
+
+Human_NP_0011    247 ACNYFWMLCEGIYLHTLIVVAVFTEKQRLRWYYLLGWGFPLVPTTIHAIT    296
+                     .||||||||||||||||||||||.|||.|.|||||||||||:|..|||:.
+Cat_XP_011283    226 GCNYFWMLCEGIYLHTLIVVAVFAEKQHLMWYYLLGWGFPLIPACIHAVA    275
+
+Human_NP_0011    297 RAVYFNDNCWLSVETHLLYIIHGPVMAALVVNFFFLLNIVRVLVTKMRET    346
+                     |::|:|||||:|.:||||||||||:.|||:||.||||||||||:||::.|
+Cat_XP_011283    276 RSLYYNDNCWISSDTHLLYIIHGPICAALLVNLFFLLNIVRVLITKLKVT    325
+
+Human_NP_0011    347 HEAESHMYLKAVKATMILVPLLGIQFVVFPWRPSNKMLGKIYDYVMHSLI    396
+                     |:|||::|:|||:||:||||||||:||:.||||..::..:||||:||.|:
+Cat_XP_011283    326 HQAESNLYMKAVRATLILVPLLGIEFVLLPWRPEGRIAEEIYDYIMHILM    375
+
+Human_NP_0011    397 HFQGFFVATIYCFCNNEVQTTVKRQWAQFKIQWNQRWGRRPSNRSARAAA    446
+                     |:||..|:||:||.|.|||..:||.|.|:|||:...:....:.|||....
+Cat_XP_011283    376 HYQGLLVSTIFCFFNGEVQAILKRNWNQYKIQFGNSFSHSDALRSASYTV    425
+
+Human_NP_0011    447 AAAEAGDIPIYICHQELRNEPANNQGEESAEIIPLNIIEQESSA    490
+                     :....|....:.|..|..|..:.:. .|:..:.|..:.:     
+Cat_XP_011283    426 STISDGTGYSHDCPSEHLNGKSIHD-IENVVLKPEKLYD-----    463
+
+
+#---------------------------------------
+#---------------------------------------
