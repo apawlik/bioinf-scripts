@@ -89,7 +89,7 @@ $ echo 'A few spaces are    and dollar is \$. \$X is ${X}.'
 
 ### Continuing lines
 
-Use the backspace \
+Use the backslash \
 
 ```
  echo The Caterpillar and Alice looked at each other for some \ 
