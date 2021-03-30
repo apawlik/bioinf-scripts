@@ -7,7 +7,7 @@
 
 for file in *_align
 do
-sed -n -e 's/^.*1: //p' “$file” >> “$file”_stats
-sed -n -e 's/^.*2: //p' “$file” >> “$file”_stats
-sed -rne 's/^.*Identity: .* \(*//p' “$file” | sed -rne 's/\%.*//p' >> “$file”_stats
+sed -n -e 's/^.*1: //p' "$file" >> "$file"_stats
+sed -n -e 's/^.*2: //p' "$file" >> "$file"_stats
+sed -rne 's/^.*Identity: .* \(*//p' "$file" | sed -rne 's/\%.*//p' >> "$file"_stats
 done
