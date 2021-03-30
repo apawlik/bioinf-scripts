@@ -5,7 +5,7 @@
 # 52 from the line beginning # Identity:  (i.e. extracts the percentage value)
 
 
-for file in *_align;
+for file in *_align
 do
 sed -n -e 's/^.*1: //p' “$file” >> “$file”_stats
 sed -n -e 's/^.*2: //p' “$file” >> “$file”_stats
